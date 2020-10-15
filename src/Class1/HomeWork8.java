@@ -5,7 +5,7 @@ public class HomeWork8 {
         printer p1 = new printer();
         p1.add(100, 100);
         p1.printerSummary();
-        p1.printSingle(10);
+        p1.printSingle(85);
         p1.printerSummary();
         p1.printDouble(10);
         p1.printerSummary();

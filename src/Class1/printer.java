@@ -13,20 +13,23 @@ public class printer {
         } else {
             System.out.println("You overload your printer");
         }}
-        public void printSingle(int single) {
-            toner = toner - single;
-            pages = pages - single;
-            System.out.println("After printing " + single + "single pages your toner level is " + toner + " Your remaining pages is " + pages);
-        }
-        public void printDouble(int double1) {
+    public void printSingle(int single) {
+        toner = toner - single;
+        pages = pages - single;
+        System.out.println("After printing " + single + "single pages your toner level is " + toner + " Your remaining pages is " + pages);
+    }
+    public void printDouble(int double1) {
         toner = toner - double1;
         pages = pages - double1/2;
-            System.out.println("After printing " + double1 + "double pages your toner level is " + toner + " Your remaining pages is " + pages);
-        }
-        public void printerSummary() {
-        System.out.println("Toner count = " + toner + " Number of remaining pages = " + pages);
+        System.out.println("After printing " + double1 + "double pages your toner level is " + toner + " Your remaining pages is " + pages);
     }
+    public void printerSummary() {
+        if (toner >= 10) {
+        System.out.println("Toner count = " + toner + " Number of remaining pages = " + pages);
+    } else if (toner < 10) {
+          System.out.println("Add toner");
+        }
 
 
 
-}
+}}
